@@ -6,7 +6,7 @@
 /*   By: ohassani <ohassani@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/07 11:25:29 by ohassani          #+#    #+#             */
-/*   Updated: 2023/11/07 11:25:30 by ohassani         ###   ########.fr       */
+/*   Updated: 2023/11/09 12:23:37 by ohassani         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,8 +20,8 @@ void ft_putstr_fd(char *s, int fd)
         i++;
     }
 }
-// int main ()
-// {
-//     char d[] = "oualid";
-//     ft_putstr_fd(d, 1);
-// }
+int main ()
+{
+    char d[] = "oualid";
+    ft_putstr_fd(d, 1);
+}

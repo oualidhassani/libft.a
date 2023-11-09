@@ -1,22 +1,21 @@
+#include "libft.h"
 void ft_striteri(char *s, void (*f)(unsigned int, char*))
 {
     size_t i = 0;
+    if(s == NULL || f == NULL)
+    return ;
     while(s[i])
     {
-        str[i] = f(i, s[i]);
-        i++:
+        f(i, &s[i]);
+        i++;
     }
 }
 
-char ft_custom_mapping_function(unsigned int i, char chara) 
+void ft_custom(unsigned int i, char* c) 
 {
-    if (i % 2 == 0) 
-        return chara;
-    return (chara - 32); 
-    }
-
-int main ()
+    printf("index ; %d , char ; %c\n",i,*c);
+}
+int main()
 {
-    char d[] = "oaulid";
-    printf("%s",ft_striteri(d, ft_custom_mapping_function));
+        ft_striteri("oualid",ft_custom);
 }
