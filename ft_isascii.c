@@ -6,14 +6,12 @@
 /*   By: ohassani <ohassani@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/02 16:24:18 by ohassani          #+#    #+#             */
-/*   Updated: 2023/11/08 20:06:05 by ohassani         ###   ########.fr       */
+/*   Updated: 2023/11/09 14:45:16 by ohassani         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-int ft_isascii(int c);
+int ft_isascii(int c)
 {
-	char unsigned ci;
-	ci = (char unsigned)ci;
 	if(c >= 0 && c <= 127)
 		return (1);
 	else

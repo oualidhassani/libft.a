@@ -6,7 +6,7 @@
 /*   By: ohassani <ohassani@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/31 18:08:30 by ohassani          #+#    #+#             */
-/*   Updated: 2023/11/07 14:11:34 by ohassani         ###   ########.fr       */
+/*   Updated: 2023/11/09 14:24:52 by ohassani         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -24,9 +24,8 @@ void *ft_memcpy(void *restrict dst, const void *restrict src, size_t n);
 char *ft_strchr(const char *s, int c);
 size_t ft_strlcpy(char *dst, const char *src, size_t size);
 int ft_tolower(int c);
-
+void ft_putchar_fd(char c, int fd);
 
 
 
 #endif
-

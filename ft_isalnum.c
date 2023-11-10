@@ -6,14 +6,12 @@
 /*   By: ohassani <ohassani@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/02 16:23:27 by ohassani          #+#    #+#             */
-/*   Updated: 2023/11/08 20:05:48 by ohassani         ###   ########.fr       */
+/*   Updated: 2023/11/09 14:44:41 by ohassani         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 int ft_isalnum(int c)
 {
-	char unsigned ci;
-	ci = (char unsigned)ci;
 	if (( c > 47 && c < 58) || (c > 64 && c < 91) || (c > 96 && c < 123))
 		return(1);
 	else
