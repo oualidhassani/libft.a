@@ -6,12 +6,12 @@
 /*   By: ohassani <ohassani@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/06 21:30:34 by ohassani          #+#    #+#             */
-/*   Updated: 2023/11/06 21:30:35 by ohassani         ###   ########.fr       */
+/*   Updated: 2023/11/10 21:00:16 by ohassani         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stdio.h>
-#include <string.h>
+#include "libft.h"
+
 char *ft_strchr(const char *s, int c)
 {
     int i;

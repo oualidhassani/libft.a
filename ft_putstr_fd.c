@@ -6,11 +6,12 @@
 /*   By: ohassani <ohassani@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/07 11:25:29 by ohassani          #+#    #+#             */
-/*   Updated: 2023/11/09 14:52:04 by ohassani         ###   ########.fr       */
+/*   Updated: 2023/11/10 21:00:11 by ohassani         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
+
 void ft_putstr_fd(char *s, int fd)
 {
     size_t i = 0;

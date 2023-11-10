@@ -6,12 +6,12 @@
 /*   By: ohassani <ohassani@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/06 21:30:38 by ohassani          #+#    #+#             */
-/*   Updated: 2023/11/09 12:12:29 by ohassani         ###   ########.fr       */
+/*   Updated: 2023/11/10 21:00:20 by ohassani         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
- #include "libft.h"
- #include <string.h>
+#include "libft.h"
+
  char *ft_strdup(const char *s)
  {
    size_t i = 0;

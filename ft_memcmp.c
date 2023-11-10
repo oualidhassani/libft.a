@@ -1,16 +1,17 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   memcmp.c                                           :+:      :+:    :+:   */
+/*   ft_memcmp.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: ohassani <marvin@42.fr>                    +#+  +:+       +#+        */
+/*   By: ohassani <ohassani@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/02 16:25:51 by ohassani          #+#    #+#             */
-/*   Updated: 2023/11/02 16:26:03 by ohassani         ###   ########.fr       */
+/*   Updated: 2023/11/10 20:59:51 by ohassani         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
-#include <string.h>
-#include <stdio.h>
+
+#include "libft.h"
+
  int ft_memcmp(const void *s1, const void *s2, size_t n)
  {
     const unsigned char *str;

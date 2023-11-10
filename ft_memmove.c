@@ -6,9 +6,11 @@
 /*   By: ohassani <ohassani@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/06 21:30:28 by ohassani          #+#    #+#             */
-/*   Updated: 2023/11/07 11:36:28 by ohassani         ###   ########.fr       */
+/*   Updated: 2023/11/10 20:59:58 by ohassani         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+#include "libft.h"
 
 void *ft_memmove(void *dest, const void *src, size_t n)
 {

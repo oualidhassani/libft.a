@@ -6,12 +6,12 @@
 /*   By: ohassani <ohassani@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/06 21:30:58 by ohassani          #+#    #+#             */
-/*   Updated: 2023/11/07 11:46:52 by ohassani         ###   ########.fr       */
+/*   Updated: 2023/11/10 21:01:27 by ohassani         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
-#include <string.h>
+
 int ft_strncmp(const char *s1, const char *s2, size_t n)
 {
     

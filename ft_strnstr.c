@@ -6,14 +6,12 @@
 /*   By: ohassani <ohassani@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/06 21:31:32 by ohassani          #+#    #+#             */
-/*   Updated: 2023/11/06 21:31:33 by ohassani         ###   ########.fr       */
+/*   Updated: 2023/11/10 21:10:01 by ohassani         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-  // #include	<string.h>
  #include "libft.h"
-// #include <stdio.h>
-
+ 
 char *ft_strnstr(const char *big, const char *little, size_t len)
 {
     size_t i = 0;

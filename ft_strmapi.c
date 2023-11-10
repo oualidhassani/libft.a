@@ -6,7 +6,7 @@
 /*   By: ohassani <ohassani@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/07 11:37:17 by ohassani          #+#    #+#             */
-/*   Updated: 2023/11/07 17:35:15 by ohassani         ###   ########.fr       */
+/*   Updated: 2023/11/10 21:09:25 by ohassani         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -31,17 +31,17 @@ char *ft_strmapi(char const *s, char  (*f)(unsigned int, char))
     return(rslt);
 }
 
-char ft_custom_mapping_function(unsigned int i, char chara) 
-{
-    if (i % 2 == 0) 
-        return chara;
-    return (chara - 32); 
-    }
+// char ft_custom_mapping_function(unsigned int i, char chara) 
+// {
+//     if (i % 2 == 0) 
+//         return chara;
+//     return (chara - 32); 
+//     }
 
-int main ()
-{
-    char d [] = "dsdsdds";
-   char *s = ft_strmapi(d, ft_custom_mapping_function);
-   printf("%s\n", d);
-   printf("%s", s);
-}
+// int main ()
+// {
+//     char d [] = "dsdsdds";
+//    char *s = ft_strmapi(d, ft_custom_mapping_function);
+//    printf("%s\n", d);
+//    printf("%s", s);
+// }

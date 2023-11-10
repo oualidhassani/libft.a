@@ -6,11 +6,12 @@
 /*   By: ohassani <ohassani@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/02 16:24:37 by ohassani          #+#    #+#             */
-/*   Updated: 2023/11/09 14:44:23 by ohassani         ###   ########.fr       */
+/*   Updated: 2023/11/10 20:59:33 by ohassani         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stdio.h>
+#include "libft.h"
+
 int ft_isdigit(int c)
 {
 	if (c > 47 && c < 58)

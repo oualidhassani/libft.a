@@ -6,11 +6,12 @@
 /*   By: ohassani <ohassani@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/06 21:30:52 by ohassani          #+#    #+#             */
-/*   Updated: 2023/11/06 21:30:53 by ohassani         ###   ########.fr       */
+/*   Updated: 2023/11/10 21:00:35 by ohassani         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
+
 size_t ft_strlcpy(char *dst, const char *src, size_t size)
 {
     size_t i = 0;
