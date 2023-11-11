@@ -6,10 +6,11 @@
 /*   By: ohassani <ohassani@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/31 17:37:52 by ohassani          #+#    #+#             */
-/*   Updated: 2023/11/10 21:00:01 by ohassani         ###   ########.fr       */
+/*   Updated: 2023/11/11 15:08:05 by ohassani         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
+#include "libft.h"
 
 void *ft_memset(void *str, int c, size_t len)
 {
