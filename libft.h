@@ -6,7 +6,7 @@
 /*   By: ohassani <ohassani@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/31 18:08:30 by ohassani          #+#    #+#             */
-/*   Updated: 2023/11/11 15:07:49 by ohassani         ###   ########.fr       */
+/*   Updated: 2023/11/12 14:35:15 by ohassani         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,7 +15,7 @@
 #include <stdio.h>
 #include <unistd.h>
 #include <stdlib.h>
-#include <stddef.h>
+#include <stdint.h>
 size_t ft_strlen(const char *s);
 void ft_bzero(void *s, size_t n);
 void *ft_memset(void *str, int c, size_t len);

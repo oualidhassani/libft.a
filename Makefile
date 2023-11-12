@@ -21,4 +21,17 @@ all: $(NAME)
 $(NAME): $(OBJ)
 
 	$(AR) $(NAME) $(OBJ)
-	
+
+%.o: %.c
+
+	$(CC) $(FLAGS) -c $< -o $@
+
+clean:
+	$(RM) $(OBJ) $(NAME)
+
+fclean: clean
+	$(RM) $(NAME)
+
+re: fclean all
+
+

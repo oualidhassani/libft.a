@@ -6,7 +6,7 @@
 /*   By: ohassani <ohassani@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/06 21:29:58 by ohassani          #+#    #+#             */
-/*   Updated: 2023/11/11 19:43:58 by ohassani         ###   ########.fr       */
+/*   Updated: 2023/11/12 14:37:53 by ohassani         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,6 +14,10 @@
 
 void *ft_calloc(size_t nmemb, size_t size)
 {
+    if(size == 0 || nmemb == 0)
+        return(ft_strdup(""));
+     if(nmemb > SIZE_MAX / size)
+        return(NULL);
     void *ptr;
     ptr = malloc(nmemb * size);
     
@@ -26,6 +30,6 @@ void *ft_calloc(size_t nmemb, size_t size)
 
 int main()
 {
-    char *str = calloc(-2, -2);
+    char *str = ft_calloc(0, 0);
     printf("%s",str);
 }
