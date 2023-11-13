@@ -6,7 +6,7 @@
 /*   By: ohassani <ohassani@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/10 21:00:23 by ohassani          #+#    #+#             */
-/*   Updated: 2023/11/10 21:00:26 by ohassani         ###   ########.fr       */
+/*   Updated: 2023/11/13 16:35:12 by ohassani         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -24,11 +24,11 @@ void ft_striteri(char *s, void (*f)(unsigned int, char*))
     }
 }
 
-void ft_custom(unsigned int i, char* c) 
-{
-    printf("index ; %d , char ; %c\n",i,*c);
-}
-int main()
-{
-        ft_striteri("oualid",ft_custom);
-}
+// void ft_custom(unsigned int i, char* c) 
+// {
+//     printf("index ; %d , char ; %c\n",i,*c);
+// }
+// int main()
+// {
+//         ft_striteri("oualid",ft_custom);
+// }

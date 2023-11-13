@@ -6,12 +6,12 @@
 /*   By: ohassani <ohassani@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/31 17:37:52 by ohassani          #+#    #+#             */
-/*   Updated: 2023/11/11 15:08:05 by ohassani         ###   ########.fr       */
+/*   Updated: 2023/11/13 15:26:28 by ohassani         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
-
+#include<string.h> 
 void *ft_memset(void *str, int c, size_t len)
 {
 	size_t i;
@@ -26,9 +26,9 @@ void *ft_memset(void *str, int c, size_t len)
 	}
 	return (pointer);
 }
-/*int main () {
-	char str[] = "oualid pool";
+// int main () {
+// 	char str[] = "oualid pool";
 
-	printf("%s\n", (char *)ft_memset(str, 'c', 12));
-	printf("%s\n", (char *)memset(str, 'c', 12));
-}*/
+// 	printf("%s\n", (char *)ft_memset(str, 'c', 12));
+// 	printf("%s\n", (char *)memset(str, 'c', 12));
+// }
