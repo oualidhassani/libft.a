@@ -12,7 +12,18 @@
 
 #include "libft.h"
 
- size_t cal(const char *s, char c)
+static char	**free_arr(char **strings, size_t i)
+{
+	while (i > 0)
+	{
+		i--;
+		free(strings[i]);
+	}
+	free(strings);
+   return(NULL);
+}
+
+ static size_t cal(const char *s, char c)
     {
       size_t count;
       size_t i;
@@ -33,12 +44,13 @@
       return(count);
     }
 
-char *word(char const *s, size_t begin, size_t last)
+static char *word(char const *s, size_t begin, size_t last)
    {
    char *word1;
    size_t i;
    i = 0;
    word1 = (char *)malloc((last - begin + 1)*sizeof(char));
+
    while(last > begin)
    {
       word1[i] = s[begin];
@@ -56,9 +68,10 @@ char *word(char const *s, size_t begin, size_t last)
       int k;
       char **split;
       
-      split = malloc((cal(s, c) + 1)*sizeof(char *));
-      if(s == NULL || split == NULL)
-      return(NULL);
+      split = (char **)malloc((cal(s, c) + 1)*sizeof(char *));
+      if(split == NULL)
+         return(0);
+
       i = 0;
       j = 0;
       k = -1;
@@ -74,7 +87,7 @@ char *word(char const *s, size_t begin, size_t last)
             }
             i++;
          }
-            split[j] = '\0';
+            split[j] = 0;
             return(split);
    }
 int main()
@@ -86,4 +99,9 @@ int main()
         printf("%s\n", strings[i]);
         i++;
     }
+        for (int i = 0; strings[i] != NULL; ++i)
+		free(strings[i]);
+	free(strings);
+    return (0);
 }
+
