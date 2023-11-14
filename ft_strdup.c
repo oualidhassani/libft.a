@@ -26,7 +26,7 @@
       }
       len++;
     }
-    copie = '\0';
+    copie[i] = 0;
     return(copie);
  }
 

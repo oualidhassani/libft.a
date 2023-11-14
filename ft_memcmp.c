@@ -28,10 +28,10 @@
     return (0);
  }
 
- int main ()
- {
-    char s[] = "oualid";
-    char d[] = "ouadid";
-    printf("%d\n",ft_memcmp(s, d, 6));
-    printf("%d", memcmp(s, d, 6));
- }
+//  int main ()
+//  {
+//     char s[] = "oualid";
+//     char d[] = "ouadid";
+//     printf("%d\n",ft_memcmp(s, d, 6));
+//     printf("%d", memcmp(s, d, 6));
+//  }

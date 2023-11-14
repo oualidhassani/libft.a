@@ -24,9 +24,9 @@ char *ft_strrchr(const char *s, int c)
     return(0);
 }
 
-int main ()
-{
-    char d[] = "oualid";
-    printf("%s\n",ft_strrchr(d, 'u'));
-    printf("%s",strrchr(d, 'u'));
-}
+// int main ()
+// {
+//     char d[] = "oualid";
+//     printf("%s\n",ft_strrchr(d, 'u'));
+//     printf("%s",strrchr(d, 'u'));
+// }

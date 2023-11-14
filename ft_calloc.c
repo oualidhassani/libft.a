@@ -28,8 +28,8 @@ void *ft_calloc(size_t nmemb, size_t size)
     return(ptr);
 }
 
-int main()
-{
-    char *str = ft_calloc(0, 0);
-    printf("%s",str);
-}
+// int main()
+// {
+//     char *str = ft_calloc(0, 0);
+//     printf("%s",str);
+// }

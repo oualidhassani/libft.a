@@ -27,9 +27,10 @@ void ft_putnbr_fd(int n, int fd)
     else
         ft_putchar_fd(n + '0', fd);   
 }
-int main()
-{
-    int i  = 9999;
-    int fd = open("t.txt", 'r'); 
-    ft_putnbr_fd(i, 2);
-}
+
+// int main()
+// {
+//     int i  = 9999;
+//     int fd = open("t.txt", 'r'); 
+//     ft_putnbr_fd(i, 2);
+// }

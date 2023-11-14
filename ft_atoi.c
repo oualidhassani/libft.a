@@ -35,9 +35,9 @@ int ft_atoi(const char *str)
     return (res * sign);
 }
 
-int main ()
-{
-    char d[] = "-2147483648";
-    printf("%d\n", atoi(d));
-    printf("%d", ft_atoi(d));
-}
+// int main ()
+// {
+//     char d[] = "-2147483648";
+//     printf("%d\n", atoi(d));
+//     printf("%d", ft_atoi(d));
+// }

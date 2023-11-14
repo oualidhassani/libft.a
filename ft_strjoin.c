@@ -38,10 +38,10 @@ char *ft_strjoin(char const *s1, char const *s2)
     return(concatenated);
 }
 
-int main ()
-{
-    char d[] ="";
-    char s[] = "";
-    printf("%s", (char *)ft_strjoin(d, s));
+// int main ()
+// {
+//     char d[] ="";
+//     char s[] = "";
+//     printf("%s", (char *)ft_strjoin(d, s));
     
-}
+// }

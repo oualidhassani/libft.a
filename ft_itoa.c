@@ -54,8 +54,8 @@ char *ft_itoa(int n)
     return(ptr);
 }
 
-int main ()
-{
-    int h = -2147483648;
-    printf("%s", ft_itoa(h));
-}
+// int main ()
+// {
+//     int h = -2147483648;
+//     printf("%s", ft_itoa(h));
+// }

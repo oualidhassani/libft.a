@@ -47,9 +47,9 @@ char *ft_strtrim(char const *s1, char const *set)
     return(result);
 }
 
-int main ()
-{
-    char d[] = "   *hello*";
-    char s[] = " *";
-    printf("%s", ft_strtrim(d, s));
-}
+// int main ()
+// {
+//     char d[] = "   *hello*";
+//     char s[] = " *";
+//     printf("%s", ft_strtrim(d, s));
+// }
