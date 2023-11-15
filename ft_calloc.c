@@ -14,22 +14,28 @@
 
 void *ft_calloc(size_t nmemb, size_t size)
 {
+    void *ptr;
+    char *str;
     if(size == 0 || nmemb == 0)
-        return(ft_strdup(""));
+    {
+        str = malloc(1);
+        str[0] = '\0';
+        return((void *)str);
+    }
      if(nmemb > SIZE_MAX / size)
         return(NULL);
-    void *ptr;
     ptr = malloc(nmemb * size);
     
     if(!ptr)
-        return(0);
+        return(NULL);
     else
         ft_bzero(ptr, nmemb * size);
     return(ptr);
 }
-
+// #include<stdlib.h>
 // int main()
 // {
-//     char *str = ft_calloc(0, 0);
+//     char *str = calloc(1, 0);
+//     printf("%d\n", *str);
 //     printf("%s",str);
 // }

@@ -23,8 +23,8 @@ all:		${NAME}
 ${NAME}:	${OBJ}
 	ar rcs ${NAME} ${OBJ}
 
-%.o:		%.c 
-	@${CC} ${CFLAGS} -c $< -o $@
+%.o:%.c 
+	${CC} ${CFLAGS} -c $< -o $@
 
 clean:
 	rm -f ${OBJ} ${OBJB}

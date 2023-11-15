@@ -16,7 +16,7 @@ int ft_atoi(const char *str)
     int i = 0;
     int res = 0;
     int sign = 1;
-    if((str[i] > 8 && str[i] < 14) || str[i] == 32)
+    while((str[i] > 8 && str[i] < 14) || str[i] == 32)
     {
         i++;
     }
@@ -25,8 +25,8 @@ int ft_atoi(const char *str)
         sign = -1;
         i++;
     }
-    else if (str[i] =='+')
-    i++;
+    else if (str[i] == '+')
+        i++;
     while (str[i] > 47 && str[i] < 58)
     {
         res = (res * 10) + str[i] - 48;
@@ -37,7 +37,7 @@ int ft_atoi(const char *str)
 
 // int main ()
 // {
-//     char d[] = "-2147483648";
+//     char d[] ="\t\n\r\v\f  469 \n";
 //     printf("%d\n", atoi(d));
 //     printf("%d", ft_atoi(d));
 // }
