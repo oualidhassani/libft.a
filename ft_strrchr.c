@@ -14,19 +14,22 @@
 
 char *ft_strrchr(const char *s, int c)
 {
-    size_t len = ft_strlen(s) - 1;
-    while (s[len])
+    size_t len ;
+    len = ft_strlen(s);
+    while (len > 0)
     {
-        if(s[len] == c)
-        return((char *)(&s[len]));
+        if(s[len] == (char )c)
+            return((char *)(&s[len]));
         len--;
     }
-    return(0);
+    if(s[len] == (char)c)
+        return((char *)(&s[len]));
+    return(NULL);
 }
-
+// #include<string.h>
 // int main ()
 // {
-//     char d[] = "oualid";
-//     printf("%s\n",ft_strrchr(d, 'u'));
-//     printf("%s",strrchr(d, 'u'));
+//     char d[] = "";
+//     printf("%s\n",ft_strrchr(d, '\0'));
+//     printf("%s\n",strrchr(d, '\0'));
 // }

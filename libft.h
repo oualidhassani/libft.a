@@ -13,11 +13,6 @@
 #ifndef LIBFT_H
 # define LIBFT_H
 
-// # define RED		"\033[31m"
-// # define GREEN		"\033[32m"
-// # define DEFAULT	"\033[0m"
-// # define BLUE		"\033[0;34m"
-/*********************/
 #include <stdio.h>
 #include <unistd.h>
 #include <stdlib.h>
@@ -35,6 +30,7 @@ int ft_isalnum(int c);
 int ft_isalpha(int c);
 int ft_isascii(int c);
 int ft_isdigit(int c);
+int ft_isprint(int c);
 int ft_tolower(int c);
 char *ft_itoa(int n);
 void *ft_memchr(const void *s, int c, size_t n);

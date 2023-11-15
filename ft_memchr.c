@@ -18,16 +18,16 @@ void *ft_memchr(const void *s, int c, size_t n)
     ptr = (const unsigned char *)s;
     while (n--> 0)
     {
-        if (*ptr == c)
+        if (*ptr == (unsigned char )c)
             return(void *)ptr;
         ptr++;
     }
     return(0);
 }
-/*int main ()
-{
-    char s[] = "hello world";
-    char c = 'w';
+// int main ()
+// {
+//     char s[] = "hello world";
+//     char c = 'w';
 
-   printf("%p", ft_memchr(s, c, 7));
-}*/
+//    printf("%s", (char *)ft_memchr(s, c, 7));
+// }

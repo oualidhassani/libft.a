@@ -18,7 +18,7 @@ int ft_strncmp(const char *s1, const char *s2, size_t n)
     size_t i;
     
     i = 0;
-    while (n > 0 && s1[i] && s2[i])
+    while (n > 0 && (s1[i] || s2[i]))
     {
         if(s1[i] != s2[i])
            return ((unsigned char )s1[i] - (unsigned char )s2[i]);
@@ -27,10 +27,10 @@ int ft_strncmp(const char *s1, const char *s2, size_t n)
     }
     return(0);
 }
-
+// #include <string.h>
 //   int main()
 // {
-//   char s[] = "dffds\200f";   char d[] = "dffdsf\0";
-//    printf("%d\n",strncmp(d, s, 6));
-//     printf("%d", ft_strncmp(d, s, 6));
+//   char s[] = "test";   char d[] = "testss";
+//    printf("%d\n",strncmp(s, d, 7));
+//     printf("%d", ft_strncmp(s, d, 7));
 // }
