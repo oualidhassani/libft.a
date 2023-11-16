@@ -10,31 +10,31 @@
 /*                                                                            */
 /* ************************************************************************** */
 
- #include "libft.h"
- 
-char *ft_strnstr(const char *big, const char *little, size_t len)
-{
-    size_t i;
-    size_t j;
-    
-    i = 0;
-    if (!big && !little)
-        return (NULL);
-    if (little == big)
-        return ((char *)big);
-    while (big[i] != '\0')
-    {
-        j = 0;
-        while (big[i + j] && little[j] && big[i + j] == little[j] && i + j < len)
-            j++;
-        if (little[j] == '\0')
-            return ((char *)(big + i));
-        i++;
-    }
-    return(NULL);
-}
-// #include	<string.h>
+#include "libft.h"
 
+char	*ft_strnstr(const char *big, const char *little, size_t len)
+{
+	size_t	i;
+	size_t	j;
+
+	i = 0;
+	if (!big && !little)
+		return (NULL);
+	if (little == big)
+		return ((char *)big);
+	while (big[i] != '\0')
+	{
+		j = 0;
+		while (big[i + j] && little[j] && big[i + j] == little[j] && i
+			+ j < len)
+			j++;
+		if (little[j] == '\0')
+			return ((char *)(big + i));
+		i++;
+	}
+	return (NULL);
+}
+// #include	<string.h
 //  int main ()
 //  {
 //   char d[] = "lorem ipsum dolor sit amet";
@@ -44,4 +44,3 @@ char *ft_strnstr(const char *big, const char *little, size_t len)
 //   char *str1 = strnstr(d, s, 17);
 //   printf("%s\n", str1);
 //  }
- 

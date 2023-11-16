@@ -12,46 +12,47 @@
 
 #include "libft.h"
 
-int positive(int n)
+int	positive(int n)
 {
-    if(n < 0)
-        return(-n);
-    return(n);
-}
-int counter(int n)
-{
-    int digit;
-    digit = 0;
-    if(n < 0)
-        digit++;
-    while (n != 0)
-    {
-        n = n / 10;
-        digit++;
-    }
-    return(digit);
+	if (n < 0)
+		return (-n);
+	return (n);
 }
 
-char *ft_itoa(int n)
+int	counter(int n)
 {
-    char *ptr;
-     long int i;
+	int	digit;
 
-    i = counter(n);
-    ptr = malloc(i + 1);
-    ptr[i] = '\0';
+	digit = 0;
+	if (n < 0)
+		digit++;
+	while (n != 0)
+	{
+		n = n / 10;
+		digit++;
+	}
+	return (digit);
+}
 
-    if(n < 0)
-        ptr[0] = '-';
-    else if (n == 0)
-        ptr[0] = '0';
-    while (n != 0)
-    {
-        i--;
-        ptr[i] = positive(n % 10) + 48;
-         n = n / 10 ;
-    }
-    return(ptr);
+char	*ft_itoa(int n)
+{
+	char		*ptr;
+	long int	i;
+
+	i = counter(n);
+	ptr = malloc(i + 1);
+	ptr[i] = '\0';
+	if (n < 0)
+		ptr[0] = '-';
+	else if (n == 0)
+		ptr[0] = '0';
+	while (n != 0)
+	{
+		i--;
+		ptr[i] = positive(n % 10) + 48;
+		n = n / 10;
+	}
+	return (ptr);
 }
 
 // int main ()

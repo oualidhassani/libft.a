@@ -12,30 +12,31 @@
 
 #include "libft.h"
 
-char *ft_strmapi(char const *s, char  (*f)(unsigned int, char))
+char	*ft_strmapi(char const *s, char (*f)(unsigned int, char))
 {
-    size_t i;
-    i = 0;
-    size_t len;
-    len = ft_strlen(s);
-    char *rslt;
-    rslt = (char *)malloc((len + 1)*sizeof(char));
-    if(rslt == NULL)
-    return(NULL);
-    while (s[i] != '\0')
-    {
-        rslt[i] = f(i, s[i]);
-        i++;
-    }
-    rslt[i] = '\0';
-    return(rslt);
+	size_t	i;
+	size_t	len;
+	char	*rslt;
+
+	i = 0;
+	len = ft_strlen(s);
+	rslt = (char *)malloc((len + 1) * sizeof(char));
+	if (rslt == NULL)
+		return (NULL);
+	while (s[i] != '\0')
+	{
+		rslt[i] = f(i, s[i]);
+		i++;
+	}
+	rslt[i] = '\0';
+	return (rslt);
 }
 
-// char ft_custom_mapping_function(unsigned int i, char chara) 
+// char ft_custom_mapping_function(unsigned int i, char chara)
 // {
-//     if (i % 2 == 0) 
-//         return chara;
-//     return (chara - 32); 
+//     if (i % 2 == 0)
+//         return (chara);
+//     return (chara - 32);
 //     }
 
 // int main ()

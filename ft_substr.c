@@ -11,26 +11,35 @@
 /* ************************************************************************** */
 
 #include "libft.h"
+#include <string.h>
 
-char *ft_substr(char const *s, unsigned int start, size_t len)
+char	*ft_substr(char const *s, unsigned int start, size_t len)
 {
-    size_t i = 0;
-    char *ptr = malloc((len + 1) * sizeof(char));
-    if (start < 0 || start >= ft_strlen(s))
-    return(NULL);
-    if (ptr == NULL)
-    return(NULL);
-    while (len > i)
-    {
-        ptr[i] = s[i + start];
-        i++;
-    }
-    ptr[i] = '\0';
-    return(ptr);
-}
+	size_t	i;
+	char	*ptr;
 
-// int main ()
+	i = 0;
+	if (!s)
+		return (NULL);
+	if (start < 0 || start >= ft_strlen(s))
+		return (ft_strdup(""));
+	if (len > ft_strlen(s) - start)
+		len = ft_strlen(s) - start;
+	ptr = malloc((len + 1) * sizeof(char));
+	if (ptr == NULL)
+		return (NULL);
+	while (len > i)
+	{
+		ptr[i] = s[i + start];
+		i++;
+	}
+	ptr[i] = '\0';
+	return (ptr);
+}
+// #include <string.h>
+
+// int	main(void)
 // {
-//     char d[] = "oualid"; 
-//    printf("%s",ft_substr(d, 6, 8));
+// 	char s[] = "";
+// 	printf("%s", ft_substr(s, 0, 0));
 // }

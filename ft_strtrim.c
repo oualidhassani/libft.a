@@ -12,44 +12,45 @@
 
 #include "libft.h"
 
- char  *ft_strncpy(char *dest, const char *src, size_t n)
+static int	checker(char const *s, char const c)
 {
-    size_t i = 0;
-    i = 0;
-    while (src[i] != '\0' && i < n)
-    {
-        dest[i] = src [i];
-    i++;
-    }
-    while (i < n)
-    {
-        dest[i] = '\0';
-        i++;
-    }
-    return (dest);
-}
-char *ft_strtrim(char const *s1, char const *set)
-{
-    size_t i = 0;
-    size_t len = ft_strlen(s1) - 1;
-    size_t diffrence;
-    char *result ;
-    
-    while(s1 && ft_strchr(set, s1[i]))
-    i++;
-    while (len >= 0 && ft_strchr(set, s1[len]))
-    len--;
-    diffrence = len - i;
-    result = (char *)malloc(diffrence *sizeof(char) + 1);
-    if(result == NULL)
-    return(NULL);
-    ft_strncpy(result, s1 + i, diffrence + 1);
-    return(result);
+	int	i;
+
+	i = 0;
+	while (s[i] != '\0')
+	{
+		if (s[i] == c)
+			return (1);
+		i++;
+	}
+	return (0);
 }
 
-// int main ()
-// {
-//     char d[] = "   *hello*";
-//     char s[] = " *";
-//     printf("%s", ft_strtrim(d, s));
-// }
+char	*ft_strtrim(char const *s1, char const *set)
+{
+	char	*newone;
+	size_t	len;
+
+	if (!s1 || !set)
+		return (NULL);
+	while (*s1)
+	{
+		if (checker(set, *s1) == 1)
+			s1++;
+		else
+			break ;
+	}
+	len = ft_strlen(s1);
+	while (len > 0)
+	{
+		if (checker(set, s1[len - 1]) == 1)
+			len--;
+		else
+			break ;
+	}
+	newone = (char *)malloc((len + 1) * sizeof(char));
+	if (!newone)
+		return (NULL);
+	ft_strlcpy(newone, s1, len + 1);
+	return (newone);
+}
