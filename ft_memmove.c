@@ -37,16 +37,12 @@ void	*ft_memmove(const void *dest, const void *src, size_t n)
 	}
 	return (ptr);
 }
+// #include <string.h>
+// #include<stdio.h>
+// int	main(void)
+// {
+// 	char	*d = "sert9wd";
+// 	char	*s = "sert9wd";
 
-// int main() {
-//     char str[] = "walid";
-
-//     printf("Original string: %s\n", str);
-
-//     // Copy the last 6 characters of str to its first 6 characters
-//     memmove(str + 3, str , 3);
-
-//     printf("Modified string: %s\n", str);
-
-//     return (0);
+// 	printf("%s", ft_memmove(d, s, 4));
 // }

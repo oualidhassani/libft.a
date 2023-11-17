@@ -15,15 +15,8 @@
 void	*ft_calloc(size_t nmemb, size_t size)
 {
 	void	*ptr;
-	char	*str;
 
-	if (size == 0 || nmemb == 0)
-	{
-		str = malloc(1);
-		str[0] = '\0';
-		return ((void *)str);
-	}
-	if (nmemb > SIZE_MAX / size)
+	if (size != 0 && nmemb > SIZE_MAX / size)
 		return (NULL);
 	ptr = malloc(nmemb * size);
 	if (!ptr)
@@ -32,10 +25,12 @@ void	*ft_calloc(size_t nmemb, size_t size)
 		ft_bzero(ptr, nmemb * size);
 	return (ptr);
 }
-// #include<stdlib.h>
-// int main()
+// #include <stdio.h>
+// #include <stdlib.h>
+
+// int	main(void)
 // {
-//     char *str = calloc(1, 0);
-//     printf("%d\n", *str);
-//     printf("%s",str);
+// 	char *str = ft_calloc(0, 0);
+// 	printf("%d\n", *str);
+// 	printf("%s", str);
 // }

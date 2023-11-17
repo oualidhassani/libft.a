@@ -91,7 +91,6 @@ char	**ft_split(char const *s, char c)
 			if (!split[j])
 			{
 				free_arr(split);
-			
 				return (NULL);
 			}
 			j++;

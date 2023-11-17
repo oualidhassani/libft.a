@@ -17,37 +17,33 @@ char	*ft_strjoin(char const *s1, char const *s2)
 	size_t	i;
 	size_t	len1;
 	size_t	len2;
-	size_t	totalelen;
 	char	*concatenated;
+	size_t	j;
 
 	i = 0;
-	len1 = ft_strlen(s1);
-	len2 = ft_strlen(s2);
-	totalelen = len1 + len2;
-	concatenated = (char *)malloc((totalelen) * sizeof(char) + 1);
 	if (s1 == NULL || s2 == NULL)
 		return (NULL);
-	else if (concatenated == NULL)
+	len1 = ft_strlen(s1);
+	len2 = ft_strlen(s2);
+	concatenated = (char *)malloc((len1 + len2) * sizeof(char) + 1);
+	if (concatenated == NULL)
 		return (NULL);
 	while (len1 > i)
 	{
 		concatenated[i] = s1[i];
 		i++;
 	}
-	i = 0;
-	while (len2 > i)
-	{
-		concatenated[len1 + i] = s2[i];
-		i++;
-	}
-	concatenated[totalelen] = '\0';
+	j = 0;
+	while (s2[j])
+		concatenated[i++] = s2[j++];
+	concatenated[len1 + len2] = '\0';
 	return (concatenated);
 }
-
+// #include <stdio.h>
 // int main ()
 // {
-//     char d[] ="";
-//     char s[] = "";
+//     char d[] ="dfdfd";
+//     char s[] = "dfdf";
 //     printf("%s", (char *)ft_strjoin(d, s));
 
 // }
