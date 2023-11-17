@@ -14,25 +14,30 @@
 
 void	*ft_memcpy(void *dst, const void *src, size_t n)
 {
+	size_t				i;
 	unsigned char		*dtr;
 	const unsigned char	*str;
 
+	i = 0;
+	if (dst == NULL && src == NULL)
+		return (NULL);
+	if (dst == src)
+		return (dst);
 	dtr = (unsigned char *)dst;
 	str = (const unsigned char *)src;
 	while (n > 0)
 	{
-		dtr[n - 1] = str[n - 1];
+		dtr[i] = str[i];
+		i++;
 		n--;
 	}
 	return (dtr);
 }
 
 // #include <string.h>
-// int main()
+
+// int	main(void)
 // {
-// 	char p[] = "testing";
-// 	char q[] = "testing";
-// 	ft_memcpy(p+2, p, 3);
-// 	memcpy(q+2, q, 3);
-// 	printf("%s\n%s\n",p, q);
+// 	memcpy("NULL", "NULL", 3);
+// 	// printf("%s\n%s\n",p, q);
 // }

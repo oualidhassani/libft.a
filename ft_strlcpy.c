@@ -17,8 +17,6 @@ size_t	ft_strlcpy(char *dst, const char *src, size_t size)
 	size_t	i;
 
 	i = 0;
-	if (dst == NULL || src == NULL)
-		return (0);
 	if (size == 0)
 		return (ft_strlen(src));
 	while (size - 1 > i && src[i])
@@ -29,11 +27,10 @@ size_t	ft_strlcpy(char *dst, const char *src, size_t size)
 	dst[i] = '\0';
 	return (ft_strlen(src));
 }
-
+// #include<string.h>
 // int main ()
 // {
-//     char s[] = "ouaaaa";
-//     char d[10];
-//     printf("%zu\n",ft_strlcpy(d, s, 0));
-//     printf("%s",d);
+//     // char s[] = "ouaaaa";
+//     // char d[10];
+//     printf("%zu\n", ft_strlcpy(0, 0, 10));
 // }

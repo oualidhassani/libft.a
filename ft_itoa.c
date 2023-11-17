@@ -24,7 +24,7 @@ int	counter(int n)
 	int	digit;
 
 	digit = 0;
-	if (n < 0)
+	if (n <= 0)
 		digit++;
 	while (n != 0)
 	{
@@ -41,6 +41,8 @@ char	*ft_itoa(int n)
 
 	i = counter(n);
 	ptr = malloc(i + 1);
+	if (ptr == NULL)
+		return (NULL);
 	ptr[i] = '\0';
 	if (n < 0)
 		ptr[0] = '-';
@@ -57,6 +59,6 @@ char	*ft_itoa(int n)
 
 // int main ()
 // {
-//     int h = -2147483648;
-//     printf("%s", ft_itoa(h));
+//   char *res = ft_itoa(0);
+//   printf("%s", res);
 // }
