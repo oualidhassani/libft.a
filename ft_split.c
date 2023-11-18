@@ -68,17 +68,11 @@ static char	*word(char const *s, size_t begin, size_t last)
 	return (word1);
 }
 
-char	**ft_split(char const *s, char c)
+static char	**loopsplit(const char *s, char c, size_t i, char **split)
 {
-	size_t	i;
 	size_t	j;
 	int		k;
-	char	**split;
 
-	split = (char **)malloc((cal(s, c) + 1) * sizeof(char *));
-	if (split == NULL)
-		return (NULL);
-	i = 0;
 	j = 0;
 	k = -1;
 	while (i <= ft_strlen(s))
@@ -100,6 +94,18 @@ char	**ft_split(char const *s, char c)
 	}
 	split[j] = NULL;
 	return (split);
+}
+
+char	**ft_split(char const *s, char c)
+{
+	char	**split;
+	size_t	j;
+
+	split = (char **)malloc((cal(s, c) + 1) * sizeof(char *));
+	j = 0;
+	if (split == NULL)
+		return (NULL);
+	return (loopsplit(s, c, 0, split));
 }
 // int main()
 // {
