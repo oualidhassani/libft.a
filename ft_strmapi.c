@@ -31,18 +31,16 @@ char	*ft_strmapi(char const *s, char (*f)(unsigned int, char))
 	rslt[i] = '\0';
 	return (rslt);
 }
-
-// char ft_custom_mapping_function(unsigned int i, char chara)
+// char fs(unsigned int i, char c)
 // {
-//     if (i % 2 == 0)
-//         return (chara);
-//     return (chara - 32);
-//     }
-
+// 	if(c >= 'a' && c <= 'z')
+// 		return(c -= 32);
+// 	return(c);	
+// }
+// #include<stdio.h>
 // int main ()
 // {
-//     char d [] = "dsdsdds";
-//    char *s = ft_strmapi(d, ft_custom_mapping_function);
-//    printf("%s\n", d);
-//    printf("%s", s);
+// 	char s[] = "oualid";
+// 	char *res  = ft_strmapi(s, fs);
+// 	printf("%s",res);
 // }

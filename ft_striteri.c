@@ -11,7 +11,13 @@
 /* ************************************************************************** */
 
 #include "libft.h"
+#include <stdio.h>
 
+// void fss(unsigned int i, char *c)
+// {
+// 	if (*c >= 'a' && *c <= 'z')
+// 		*c -= 32;
+// }
 void	ft_striteri(char *s, void (*f)(unsigned int, char *))
 {
 	size_t	i;
@@ -25,12 +31,10 @@ void	ft_striteri(char *s, void (*f)(unsigned int, char *))
 		i++;
 	}
 }
-
-// void ft_custom(unsigned int i, char* c)
-// {
-//     printf("index ; %d , char ; %c\n",i,*c);
-// }
 // int main()
 // {
-//         ft_striteri("oualid",ft_custom);
+// 	char s[] = "Hello world!";
+// 	ft_striteri(s, fss);
+// 	printf("%s", s);
+// 	return 0;
 // }

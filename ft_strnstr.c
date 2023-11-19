@@ -18,15 +18,14 @@ char	*ft_strnstr(const char *big, const char *little, size_t len)
 	size_t	j;
 
 	i = 0;
-	if (!big && !little)
+	if (!big && len == 0)
 		return (NULL);
 	if (little == big)
 		return ((char *)big);
 	while (big[i] != '\0')
 	{
 		j = 0;
-		while (big[i + j] && little[j] && big[i + j] == little[j] && i
-			+ j < len)
+		while (big[i + j] && little[j] && big[i + j] == little[j] && i + j < len)
 			j++;
 		if (little[j] == '\0')
 			return ((char *)(big + i));
@@ -34,13 +33,10 @@ char	*ft_strnstr(const char *big, const char *little, size_t len)
 	}
 	return (NULL);
 }
-// #include	<string.h
-//  int main ()
-//  {
-//   char d[] = "lorem ipsum dolor sit amet";
-//   char s[] = "dolor";
-//   char *str = ft_strnstr(d, s, 17);
-//   printf("%s\n", str);
-//   char *str1 = strnstr(d, s, 17);
-//   printf("%s\n", str1);
-//  }
+#include <string.h>
+#include <stdio.h>
+ int main ()
+ {
+	 // printf("%s" , ft_strnstr(NULL,"sdjfgh", 1));
+   printf("%s", strnstr(NULL, "ksdajhgj", 1));
+ }

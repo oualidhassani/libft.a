@@ -27,7 +27,7 @@ char	*ft_strrchr(const char *s, int c)
 		return ((char *)(&s[len]));
 	return (NULL);
 }
-// #include<string.h>
+// // #include<string.h>
 // int main ()
 // {
 //     char d[] = "";
