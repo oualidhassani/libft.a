@@ -42,7 +42,7 @@ int	ft_atoi(const char *str)
 
 // int main ()
 // {
-//     char d[] ="\t\n\r\v\f  469 \n";
+//     char d[] ="+123";
 //     printf("%d\n", atoi(d));
 //     printf("%d", ft_atoi(d));
 // }

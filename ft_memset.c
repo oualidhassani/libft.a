@@ -11,7 +11,6 @@
 /* ************************************************************************** */
 
 #include "libft.h"
-#include <string.h>
 
 void	*ft_memset(void *str, int c, size_t len)
 {
@@ -22,14 +21,17 @@ void	*ft_memset(void *str, int c, size_t len)
 	pointer = (unsigned char *)str;
 	while (i < len)
 	{
-		pointer[i] = c;
+		pointer[i] = (unsigned char )c;
 		i++;
 	}
 	return (pointer);
 }
-// int main () {
-// 	char str[] = "oualid pool";
+/*int main () {
+	int ii[] = {0, 0 , 0, 0};
+	ft_memset(ii, 8, 1);
+	ft_memset(ii + 1, 7 , 2);
 
-// 	printf("%s\n", (char *)ft_memset(str, 'c', 12));
-// 	printf("%s\n", (char *)memset(str, 'c', 12));
-// }
+	for(int i = 0; i < 4 ; i++)
+		printf("%d   ", ii[i]);
+
+}*/
